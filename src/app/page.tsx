@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="mb-32 grid  text-center lg:mb-0 lg:grid-cols-2 lg:text-left gap-6">
+      <div className="mb-32 grid  text-center lg:mb-0 lg:grid-cols-3 lg:text-left gap-6">
         <a
           href="https://nullcloud.io"
           className="group p-6 rounded-lg border border-blue-400 px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -63,6 +64,21 @@ export default function Home() {
             Learn from our extensive video guides.
           </p>
         </a>
+
+        <Link href="/ai-games"
+          className="group p-6 rounded-lg border border-blue-400 px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+          rel="noopener noreferrer"
+        >
+          <h2 className={`mb-3 text-2xl font-semibold text-blue-400`}>
+            The AI Games{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-blue-400`}>
+            Only the best AI's will survive.
+          </p>
+        </Link>
 
       </div>
     </main>
